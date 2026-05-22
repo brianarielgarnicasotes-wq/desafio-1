@@ -1,0 +1,86 @@
+/* 🔥 RESET + BOX MODEL CONTROL */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* FONDO */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #000000, #1a1a1a, #2b2b2b);
+    color: white;
+}
+
+/* CONTENEDOR */
+.container {
+    width: 85%;
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+/* TITULO */
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #00d4ff;
+}
+
+/* TARJETAS */
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px; /* padding (box model) */
+    margin-bottom: 20px; /* margin (box model) */
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.1); /* border */
+    box-shadow: 0 0 10px rgba(0, 212, 255, 0.2);
+}
+
+/* FORMULARIO ORDENADO */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* mejor que usar muchos margin */
+}
+
+/* LABEL */
+label {
+    font-size: 14px;
+    color: #ccc;
+}
+
+/* INPUT */
+input {
+    padding: 10px; /* padding */
+    border-radius: 6px;
+    border: 1px solid #333;
+    background: #111;
+    color: white;
+}
+
+/* BOTON */
+button {
+    margin-top: 10px;
+    padding: 12px;
+    border-radius: 6px;
+    border: none;
+    background: #00d4ff;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #00aacc;
+}
+
+/* RESULTADO DESTACADO */
+.resultado {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 6px;
+    background: rgba(0, 255, 136, 0.1);
+    border-left: 4px solid #00ff88;
+    font-weight: bold;
+}
