@@ -1,4 +1,3 @@
-// 🔥 EJERCICIO 1
 function calcularEnfriamiento() {
     let T0 = parseFloat(document.getElementById("t0").value);
     let Ts = parseFloat(document.getElementById("ts").value);
@@ -11,8 +10,6 @@ function calcularEnfriamiento() {
     document.getElementById("resultado1").textContent =
         "Temperatura final: " + T;
 }
-
-// 🔥 FACTORIAL
 function factorial(n) {
     let f = 1;
     for (let i = 1; i <= n; i++) {
@@ -20,14 +17,10 @@ function factorial(n) {
     }
     return f;
 }
-
-// 🔥 COMBINACIONES
 function combinacion(n, r) {
     if (r > n) return 0;
     return factorial(n) / (factorial(r) * factorial(n - r));
 }
-
-// 🔥 EJERCICIO 2
 function calcularCombinaciones() {
     let n1 = parseInt(document.getElementById("n1").value);
     let r1 = parseInt(document.getElementById("r1").value);
